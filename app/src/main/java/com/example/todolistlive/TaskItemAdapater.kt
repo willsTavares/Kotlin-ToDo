@@ -13,7 +13,6 @@ class TaskItemAdapater(
         val from = LayoutInflater.from(parent.context)
         val binding = TaskItemCellBinding.inflate(from, parent, false)
         return TaskItemViewHolder(parent.context, binding, clickListener)
-
     }
 
     override fun onBindViewHolder(holder: TaskItemViewHolder, position: Int) {

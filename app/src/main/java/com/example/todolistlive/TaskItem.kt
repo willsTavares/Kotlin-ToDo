@@ -9,8 +9,7 @@ class TaskItem (
     var id: UUID = UUID.randomUUID(),
 ) {
 
-    fun isCompleted() = !completed
-    fun imageResource(): Int = if (isCompleted()) R.drawable.ic_unchecked else R.drawable.ic_checked
-
+    fun isCompleted() = completed
+    fun imageResource(): Int = if (!isCompleted()) R.drawable.ic_unchecked else R.drawable.ic_checked
 
 }

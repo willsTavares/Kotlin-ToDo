@@ -36,7 +36,4 @@ class TaskViewModel : ViewModel()
        }
         taskItems.postValue(list)
     }
-
-
-
 }
