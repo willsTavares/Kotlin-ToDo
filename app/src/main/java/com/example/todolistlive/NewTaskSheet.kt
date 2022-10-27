@@ -9,6 +9,8 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import com.example.todolistlive.databinding.FragmentNewTaskSheetBinding
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 
 class NewTaskSheet(var taskItem: TaskItem?) : BottomSheetDialogFragment() {
 
@@ -56,7 +58,6 @@ class NewTaskSheet(var taskItem: TaskItem?) : BottomSheetDialogFragment() {
         {
             val newTask = TaskItem(name,desc, false)
             taskViewModel.addTaskItem(newTask)
-
         }
         else
         {
